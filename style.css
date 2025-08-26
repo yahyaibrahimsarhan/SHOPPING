@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+:root{
+ --Gray:#514F4F;  
+--pink:#F89CAB;
+--YOUSUF:#B8374C;
+--LIGHTORANGE:#f9ece6;
+--LIGHTGRAY:#beb5b1;
+--PURPLE:#3f1a5b;
+--LIGHTBLUE:#7fd7eb;
+--RED:#b7374c;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    width: 94%;  
+    margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0 20px;
+}
+
+ul.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--LIGHTORANGE);
+    gap: 10px;
+    padding: 10px;
+    border-radius: 14px 14px 0 0;
+}
+
+ul.menu li{
+
+
+}
+
+.icon-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-container span{
+    text-transform: capitalize;
+}
+
+ul.menu li a{
+    text-decoration: none;
+    color: var(--Gray-color);
+    font-size: 16px;
+    text-transform:uppercase ;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    
+}
+
+a.active{
+    background-color: white;
+}
+
+ul.menu li a:hover{
+    background:rgb(255, 255, 255);
+
+
+}
+
+
+.main{
+    width: 94%;
+    margin: 0 auto;
+    background: var(--pink);
+    padding: 100px 40px;
+    display: flex;
+    gap: 100px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    border-radius: 0 0 14px 14px; 
+}
+
+.text-div{
+    color: white;
+    margin: 0 20px 0px;
+    width: 38%;
+}
+
+.text-div h1{
+    font-size: 60px;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+
+.text-div button{
+    background-color: var(--RED);
+    color: #FFFF;
+    border-radius: 6%;
+    padding: 15px 50px;
+    margin-top: 30px;
+    border: none;
+    font-size: 20px;
+}
+
+p{
+    text-transform: none;
+}
+
+.img-div{
+    width: 42%; 
+}
+
+.img-div img{
+    width: 400px;
+}
