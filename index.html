@@ -10,7 +10,10 @@
 </head>
 <body>
     <header>
-                    <h2>shopping</h2>
+        <div class="subtitle-header">
+            <h2>shopping</h2>
+            <i class="fa-solid bars fa-bars"></i>
+        </div>
         <nav>
             <ul class="menu">
                 <li><a class="active" href="">home</a></li>
@@ -48,6 +51,25 @@
             <img src="img/shopping-girl-1.avif" alt="">
         </div>
     </div>
+
+    <script>
+        menu = document.querySelector(".menu ")
+        icon = document.querySelector(".bars")
+        icon.addEventListener("click" ,controlmenu)
+        console.log(menu)
+
+        function controlmenu(){
+            if (menu.classList.contains("show"))(
+                menu.classList.remove("show")
+            )
+
+            else (
+                menu.classList.add("show")
+            )
+          
+
+        }
+    </script>
 
 </body>
 </html>
