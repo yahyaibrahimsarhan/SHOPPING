@@ -40,7 +40,7 @@ h2{
 
 
 .bars{
-    display: none;
+    display: none !important;
     width: 30px;
 }
 
@@ -164,7 +164,7 @@ p{
     }
 
     .bars{
-        display: initial;
+        display: initial !important;
 
     }
 
