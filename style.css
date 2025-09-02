@@ -111,7 +111,7 @@ a.active{
 .text-div{
     color: white;
     margin: 0 20px 0px;
-    width: 38%;
+    width: 50%;
 }
 
 .text-div h1{
@@ -131,11 +131,11 @@ a.active{
 }
 
 p{
-    text-transform: none;
+    
 }
 
 .img-div{
-    width: 42%; 
+    width: 50%; 
 }
 
 .img-div img{
@@ -145,7 +145,7 @@ p{
 
 
 
-@media (max-width:425px) {
+@media (max-width:768px) {
     
     .subtitle-header{
         display: flex; 
@@ -153,19 +153,24 @@ p{
         justify-content: space-between;
     }
     
-    .text-div h1{
-        font-size: 30px;
-
-
+    .main{
+        flex-direction: column;
     }
 
-    .img-div{
-        display: none;
+    .text-div{
+        width: 100%;
+    }
+
+    .text-div h1{
+        font-size: 30px;
+    }
+
+    .img-div img{
+        width: 80%;
     }
 
     .bars{
         display: initial !important;
-
     }
 
     .menu{
@@ -176,5 +181,4 @@ p{
     .show{
         display: flex;  
     }
-
 }
