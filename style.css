@@ -12,11 +12,12 @@ box-sizing: border-box;
 --pink:#F89CAB;
 --YOUSUF:#B8374C;
 --LIGHTORANGE:#f9ece6;
---LIGHTGRAY:#beb5b1;
+--LIGHTGRAY:#f8f7f6;
 --PURPLE:#3f1a5b;
 --LIGHTBLUE:#7fd7eb;
+--blue:#109dbd;
 --RED:#b7374c;
---lightgray:#ededed
+--lightgray:#ededed;
 }
 
 body{
@@ -121,10 +122,10 @@ a.active{
     text-transform: capitalize;
 }
 
-.text-div button{
+.text-div .c-u{
     background-color: var(--RED);
     color: #FFFF;
-    border-radius: 6%;
+    border-radius: 12px;
     padding: 15px 50px;
     margin-top: 30px;
     border: none;
@@ -211,11 +212,101 @@ p{
 }
 
 
-.vap{
-    border: var(--YOUSUF);
-    padding: 20px;
+.vap-btn{
+    border-radius:5px;
+    padding: 12px 32px;
+    background: var(--RED);
+    color: white;
+    margin-bottom: 10px;
+    border: var(--RED) solid 2px; 
+    transition: 0.3s;
 }
 
+.vap-btn:hover{
+    background: white;
+    color: var(--RED);
+    border: var(--RED) solid 2px; 
+}
+
+.latest-products{
+    background-color: var(--LIGHTBLUE);
+    width: 84%;
+    margin: 25px auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.latest-title{
+    margin: 0px 30px 0;
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
+
+.buy{
+    background-color: var(--blue);
+    color: #FFFF;
+    padding: 15px 50px;
+    margin-top: 30px;
+    border: none;
+    font-size: 20px;
+}
+
+.see{
+    color: black;
+    padding: 15px 50px;
+    margin-top: 30px;
+    border: none;
+    font-size: 20px;
+}
+
+.shopping-reason{
+    margin: auto;
+    margin-top:80px;
+    width: 94%;
+}
+
+.shopping-reason h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.benifits{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+
+}
+
+.benifit{
+    padding: 50px;
+    background-color: var(--LIGHTGRAY);
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 12px;
+}
+
+.benifit h4{
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+
+.benifit i{
+    font-size: 40px;
+    color:purple;
+    margin-bottom: 16px;
+}
+
+.benifit p{
+    color: var(--Gray);
+}
 
 @media (max-width:768px) {
     
@@ -257,4 +348,13 @@ p{
     .part{
         flex-direction: column;
     }
+
+    .latest-products{
+        flex-direction: column-reverse;
+    }
+
+    .benifits{
+        flex-direction: column;
+    }
+    
 }
