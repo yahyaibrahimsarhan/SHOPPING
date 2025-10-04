@@ -34,7 +34,6 @@ header{
 }
 
 h2{
-    text-align: center;
     text-transform: capitalize;
     padding: 0 20px;
     
@@ -235,7 +234,6 @@ p{
     border-radius: 20px;
     display: flex;
     align-items: center;
-    text-align: center;
 }
 
 .latest-title{
@@ -308,6 +306,48 @@ p{
     color: var(--Gray);
 }
 
+.caring{
+    background-color: #8131be;
+    width: 94%;
+    padding: 30px;
+    margin:0 auto 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    color: white;
+
+}
+
+.caring .img-div{
+    width:450px;
+}
+
+.caring .text .title{
+    width: 350px;
+    font-size: 40px;
+}
+
+.caring .text p{
+    
+}
+
+.btns{
+
+}
+
+.caring .text div .see{
+    background-color: #8d1be4;
+    color: white;
+}
+
+.caring .text div .buy{
+    background-color: white;
+    color: black;
+}
+
 @media (max-width:768px) {
     
     .subtitle-header{
@@ -355,6 +395,48 @@ p{
 
     .benifits{
         flex-direction: column;
+        
+    }
+
+    .caring{
+        flex-direction: column;
+
+    }
+
+    .text{
+        align-items: center;
+        margin-left: 25px;
+    }
+
+    .caring .img-div{
+        width: 225px;
+        text-align: left
+    }
+
+    .caring .text .title{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .caring .text p{
+        font-size: 14px;
+        
+    }
+
+    .btns{
+        margin-bottom: 15px;
+        display: flex;
+        gap: 15px;
+        flex-direction: row;
+        align-items: right;
+    }
+
+    .caring .text div .see{
+        padding: 15px 30px;
+    }
+
+    .caring .text div .buy{
+        padding: 15px 30px;
     }
     
 }
